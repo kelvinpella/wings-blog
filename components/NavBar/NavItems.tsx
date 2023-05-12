@@ -6,9 +6,9 @@ const navItems = [
 ];
 export default function NavItems() {
   return (
-    <div className="hidden md:flex items-center justify-center space-x-3 capitalize font-bold">
+    <div className="flex flex-col md:flex-row items-end md:items-center justify-end md:justify-center space-x-3  capitalize font-bold">
       {navItems.map(({ name, value }) => (
-        <Link key={value} href={value}>
+        <Link key={value} href={value} className="my-2 md:my-0">
           {name}
         </Link>
       ))}

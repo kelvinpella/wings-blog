@@ -1,4 +1,4 @@
-"use client";
+
 import { AiOutlineSearch } from "react-icons/ai";
 import { SearchPostSchema } from "@/schema/validationSchema";
 import FormikWrapper from "../Formik/FormikWrapper";

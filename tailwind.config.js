@@ -10,6 +10,9 @@ module.exports = {
       colors: {
         "ghost-white": "#F4F4F5",
       },
+      fontFamily: {
+        "work-sans": ["Work Sans", "sans-serif"],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

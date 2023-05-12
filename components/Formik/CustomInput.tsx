@@ -10,7 +10,7 @@ export default function CustomInput(props: Props) {
     <input
       {...field}
       {...props}
-      className="py-1 px-2 bg-ghost-white text-sm rounded-md outline-none"
+      className="py-1 px-2 md:py-1.5 md:px-2.5 bg-ghost-white text-sm md:text-base lg:text-lg rounded-md outline-none"
     ></input>
   );
 }

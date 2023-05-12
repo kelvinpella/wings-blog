@@ -11,7 +11,7 @@ export default function RootLayout({
       <head>
         <title>Wings - Your Aviation Blog</title>
       </head>
-      <body className="md:text-lg bg-ghost-white">
+      <body className="md:text-lg bg-ghost-white font-work-sans">
         <NavBar />
         <main>{children}</main>
         <Footer />

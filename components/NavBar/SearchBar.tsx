@@ -25,7 +25,7 @@ const formikWrapperProps = { initialValues, validationSchema, onSubmit };
 export default function SearchBar() {
   return (
     <FormikWrapper {...formikWrapperProps}>
-      <div className="flex items-center space-x-1">
+      <div className="flex items-center space-x-2 lg:space-x-3">
         <CustomInput name="word" type="text" placeholder="Search" />
         <button type="submit">
           <AiOutlineSearch className="text-2xl" />

@@ -37,7 +37,7 @@ export default function Menu({ isOpen, toggleMenu }: Props) {
   );
   // content shown when Menu is open
   const contentMenuOpened = (
-    <div className="md:hidden w-full h-screen absolute inset-0  ">
+    <div className="w-full h-screen absolute inset-0  ">
       {fadeInOutBackdrop(
         (style, isOpen) =>
           isOpen && (
@@ -68,13 +68,13 @@ export default function Menu({ isOpen, toggleMenu }: Props) {
 
   // content shown when Menu is closed
   const contentMenuClosed = (
-    <button className="md:hidden" onClick={toggleMenu}>
+    <button onClick={toggleMenu}>
       <AiOutlineMenu className="text-2xl" />
     </button>
   );
 
   return (
-    <div className="flex items-end">
+    <div className="flex items-end md:hidden">
       {contentMenuClosed}
       {isOpen && contentMenuOpened}
     </div>

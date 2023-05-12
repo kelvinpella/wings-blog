@@ -11,9 +11,11 @@ export default function RootLayout({
       <head>
         <title>Wings - Your Aviation Blog</title>
       </head>
-      <body className="md:text-lg bg-ghost-white font-work-sans">
+      <body className="text-sm md:text-base lg:text-lg bg-ghost-white font-work-sans min-h-screen flex flex-col justify-between">
         <NavBar />
-        <main>{children}</main>
+        <main className="w-full lg:max-w-screen-xl lg:mx-auto px-2 py-2 md:px-4">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

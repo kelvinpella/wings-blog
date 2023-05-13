@@ -4,8 +4,8 @@ import Author from "./Author";
 import Link from "next/link";
 export default function FeaturedPost() {
   return (
-    <div className="w-full h-featuredHeight relative mb-32 rounded-md bg-featuredBg bg-cover bg-no-repeat bg-center ">
-      <div className="card w-11/12 mx-auto absolute inset-x-0 -bottom-24 py-6 ">
+    <div className="w-full h-featuredHeight relative mb-32 md:mb-36 rounded-md bg-featuredBg bg-cover bg-no-repeat bg-center ">
+      <div className="card w-11/12 mx-auto absolute inset-x-0 -bottom-24  py-6 md:px-6 lg:px-8 md:py-7">
         <CustomButton name="featured" type="button" />
         <h1>The Impact of Technology on the Workplace</h1>
         <Author name="Kelvin Pella" src={profileImage} date={new Date()} />

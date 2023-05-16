@@ -15,7 +15,7 @@ export default function Author({ src, name, date }: Props) {
         width={40}
         height={40}
       />
-      <h2 className="truncate">{name}</h2>
+      <p className="truncate">{name}</p>
       <p>{new Date(date).toDateString()}</p>
     </div>
   );

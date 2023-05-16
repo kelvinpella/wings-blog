@@ -11,6 +11,7 @@
     "compile:watch": "tsc --noEmit --watch"
   },
   "dependencies": {
+    "@portabletext/react": "^3.0.0",
     "@react-spring/web": "^9.7.2",
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.10.3",

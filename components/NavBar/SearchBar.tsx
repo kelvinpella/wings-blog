@@ -1,6 +1,5 @@
-
 import { AiOutlineSearch } from "react-icons/ai";
-import { SearchPostSchema } from "@/schema/validationSchema";
+import { SearchPostSchema } from "@/zod/validationSchema";
 import FormikWrapper from "../Formik/FormikWrapper";
 import CustomInput from "../Formik/CustomInput";
 import * as z from "zod";
@@ -12,7 +11,6 @@ const initialValues = {
 
 const validationSchema = toFormikValidationSchema(SearchPostSchema);
 
-type SearchValues = z.infer<typeof SearchPostSchema>;
 type SubmitFunction = (values: FormikValues) => void;
 
 const onSubmit: SubmitFunction = ({ word }) => {

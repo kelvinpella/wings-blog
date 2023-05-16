@@ -1,7 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 
 type Props = {
-  src: StaticImageData;
+  src: string;
   name: string;
   date: Date;
 };
@@ -11,10 +11,12 @@ export default function Author({ src, name, date }: Props) {
       <Image
         src={src}
         alt="Profile Image"
-        className="w-10 h-10 rounded-full "
+        className="w-10 h-10 rounded-full"
+        width={40}
+        height={40}
       />
       <h2 className="truncate">{name}</h2>
-      <p>{date.toLocaleDateString()}</p>
+      <p>{new Date(date).toLocaleDateString()}</p>
     </div>
   );
 }

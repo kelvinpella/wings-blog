@@ -1,8 +1,9 @@
 import Posts from "@/components/Posts/Posts";
 
-export default function Home() {
+export default async function Home() {
   return (
     <div>
+      {/* @ts-expect-error Async Server Component */}
       <Posts />
     </div>
   );

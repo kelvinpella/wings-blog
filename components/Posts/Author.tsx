@@ -16,7 +16,7 @@ export default function Author({ src, name, date }: Props) {
         height={40}
       />
       <h2 className="truncate">{name}</h2>
-      <p>{new Date(date).toLocaleDateString()}</p>
+      <p>{new Date(date).toDateString()}</p>
     </div>
   );
 }

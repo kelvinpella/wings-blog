@@ -10,3 +10,7 @@ export type Post = {
   coverImage: { alt: string; url: string };
   author: { name: string; profileImage: string };
 };
+
+export type BlogContextType = {
+  posts: Post[];
+};

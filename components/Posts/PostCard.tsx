@@ -1,6 +1,6 @@
 import { Post } from "@/typings";
 import Image from "next/image";
-import Author from "./Author";
+import Author from "../Author/Author";
 import Link from "next/link";
 
 export default function PostCard({ post }: { post: Post }) {

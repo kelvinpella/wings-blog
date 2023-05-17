@@ -1,9 +1,15 @@
+'use client'
 import CustomButton from "../Buttons/CustomButton";
-import profileImage from "@/public/images/profile.jpg";
-import Author from "./Author";
+import Author from "../Author/Author";
 import Link from "next/link";
-import { Post } from "@/typings";
-export default function FeaturedPost({ featured }: { featured: Post }) {
+import { blogContext } from "@/common/context";
+import { useContext } from "react";
+import { random } from "lodash";
+
+export default function FeaturedPost() {
+  const { posts } = useContext(blogContext);
+  const randomPostIndex = random(posts.length > 0 ? posts.length - 1 : 0);
+  const featured = posts[randomPostIndex];
   const {
     title,
     headline,
@@ -25,7 +31,7 @@ export default function FeaturedPost({ featured }: { featured: Post }) {
         <Author name={name} src={profileImage} date={_createdAt} />
         <p className="my-2 line-clamp-3">{headline}</p>
         <Link
-          href={slug}
+          href={`/posts/${slug}`}
           className="my-4 font-semibold text-royal-blue md:my-0 hover:text-cyan-500"
         >
           Read More

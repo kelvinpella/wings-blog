@@ -25,11 +25,11 @@ export default async function Post({
         _createdAt,
       } = post;
       return (
-        <div className="lg:max-w-4xl mx-auto">
+        <article className="lg:max-w-4xl mx-auto">
           <h1>{title}</h1>
           <Author name={name} src={profileImage} date={_createdAt} />
           <PortableText value={content} components={FormattedPost} />
-        </div>
+        </article>
       );
     }
   }, [slug]);

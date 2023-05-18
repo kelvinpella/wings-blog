@@ -25,6 +25,7 @@ module.exports = {
       },
       gridTemplateColumns: {
         authorCol: "auto auto 1fr",
+        resultCols: "auto 1fr",
       },
     },
   },

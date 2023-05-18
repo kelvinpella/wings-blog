@@ -16,7 +16,7 @@ export default function PostCard({ post }: { post: Post }) {
       href={`/posts/${slug}`}
       className="card md:p-4 cursor-pointer hover:bg-slate-100"
     >
-      <div className="relative w-full rounded-md h-52 overflow-hidden mb-2 md:mb-4">
+      <div className="relative w-full rounded-md h-52 mb-2 md:mb-4">
         <Image src={url} alt={alt} fill />
       </div>
       <h1 className="md:my-4">{title}</h1>

@@ -9,9 +9,10 @@ module.exports = {
     extend: {
       colors: {
         "ghost-white": "#F4F4F5",
+        "ghost-white-shade": "#E7E7E7",
         lavender: "#E8E8EA",
         "royal-blue": "#4B6BFB",
-        manatee: "#97989F",
+        manatee: "#97989F", 
       },
       spacing: {
         featuredHeight: "40vh",

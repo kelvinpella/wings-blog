@@ -9,14 +9,24 @@ module.exports = {
     extend: {
       colors: {
         "ghost-white": "#F4F4F5",
+        "ghost-white-shade": "#E7E7E7",
+        lavender: "#E8E8EA",
+        "royal-blue": "#4B6BFB",
+        manatee: "#97989F", 
+      },
+      spacing: {
+        featuredHeight: "40vh",
       },
       fontFamily: {
         "work-sans": ["Work Sans", "sans-serif"],
       },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        featuredBg:
+          "linear-gradient(0deg, rgba(20, 22, 36, 0.4), rgba(20, 22, 36, 0.4)), url('/images/featuredimage.png')",
+      },
+      gridTemplateColumns: {
+        authorCol: "auto auto 1fr",
+        resultCols: "auto 1fr",
       },
     },
   },

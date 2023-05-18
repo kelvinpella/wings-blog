@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const navItems = [
-  { name: "All Posts", value: "all-posts" },
+  { name: "All Posts", value: "all-post" },
   { name: "Contact", value: "contact" },
 ];
 export default function NavItems() {
@@ -10,7 +10,7 @@ export default function NavItems() {
       {navItems.map(({ name, value }) => (
         <Link
           key={value}
-          href={value === "contact" ? "/contact" : `/posts/${value}`}
+          href={value}
           className="my-2 md:my-0 hover:text-amber-700"
         >
           {name}

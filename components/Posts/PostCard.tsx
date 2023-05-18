@@ -13,7 +13,7 @@ export default function PostCard({ post }: { post: Post }) {
   } = post;
   return (
     <Link
-      href={`/posts/${slug}`}
+      href={`/post/${slug}`}
       className="card md:p-4 cursor-pointer hover:bg-slate-100"
     >
       <div className="relative w-full rounded-md h-52 mb-2 md:mb-4">

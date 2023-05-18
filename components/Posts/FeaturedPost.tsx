@@ -31,7 +31,7 @@ export default function FeaturedPost() {
         <Author name={name} src={profileImage} date={_createdAt} />
         <p className="my-2 line-clamp-3">{headline}</p>
         <Link
-          href={`/posts/${slug}`}
+          href={`/post/${slug}`}
           className="my-4 font-semibold text-royal-blue md:my-0 hover:text-cyan-500"
         >
           Read More

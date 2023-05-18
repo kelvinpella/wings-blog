@@ -36,3 +36,8 @@ export async function getPost(slug: string): Promise<Post> {
     { slug }
   );
 }
+
+export async function getAllSlugs(): Promise<{ slug: string }[]> {
+  return client.fetch(groq`
+*[_type=='post']{"slug":slug.current}`);
+}

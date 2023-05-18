@@ -36,9 +36,9 @@ export default function Contact() {
           Kelvin Pella is a passionate aviation enthusiast and accomplished
           author in the field of aviation. With a background in Aeronautical
           Engineering, he combines his technical expertise with a love for
-          writing to educate and inspire others about aviation. <br />
+          writing to educate and inspire others about aviation. <br /><br />
           His articles and books cover a wide range of aviation topics, from
-          history to technological advancements. <br />
+          history to technological advancements. <br /> <br />
           As a licensed pilot, he brings firsthand experience to his work. His
           goal is to ignite a sense of wonder and inspire the next generation of
           aviation enthusiasts and professionals.

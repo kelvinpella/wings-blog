@@ -18,10 +18,10 @@ export default function SearchWord({
       filter(posts, (post) =>
         post.title.toLowerCase().includes(decodedText.toLowerCase())
       ).map(({ coverImage: { url, alt }, title, headline, slug }) => (
-        <Link key={slug} href={`/posts/${slug}`} >
+        <Link key={slug} href={`/post/${slug}`}>
           <div className="card grid grid-cols-resultCols grid-rows-1 gap-x-2 md:gap-x-4 my-4 hover:bg-slate-100">
             <div className="w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32 relative ">
-              <Image src={url} alt={alt} fill className='object-contain'/>
+              <Image src={url} alt={alt} fill className="object-contain" />
             </div>
             <div>
               <h1 className="mt-0 mb-2 text-lg md:text-xl">{title}</h1>
@@ -34,9 +34,17 @@ export default function SearchWord({
   );
 
   return (
-    <div className="pt-24 w-full lg:max-w-screen-xl mx-auto">
+    <div className="pt-24 w-full lg:max-w-screen-xl mx-auto ">
       <h1>Search Results:</h1>
-      {filteredPosts.length ? filteredPosts : <h1 className="text-center text-lg md:text-xl my-14 text-slate-500">No results found!</h1>}
+      <div className="mb-20">
+        {filteredPosts.length ? (
+          filteredPosts
+        ) : (
+          <h1 className="text-center text-lg md:text-xl my-14 text-slate-500">
+            No results found!
+          </h1>
+        )}
+      </div>
       <LatestPosts />
     </div>
   );

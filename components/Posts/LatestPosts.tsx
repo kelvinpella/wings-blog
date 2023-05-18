@@ -23,7 +23,7 @@ export default function LatestPosts() {
       </div>
       {isHomeRoute && renderedPosts.length > 9 && (
         <div className="text-center my-6">
-          <Link href="/posts/all-posts">
+          <Link href="/all-post">
             <CustomButton name="View All Post" type="button" />
           </Link>
         </div>

@@ -21,11 +21,12 @@ export default function LatestPosts() {
       <div className="w-full grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3 md:gap-5">
         {renderedPosts}
       </div>
-      {isHomeRoute && (
+      {isHomeRoute && renderedPosts.length > 9 && (
         <div className="text-center my-6">
-        <Link href="/posts/all-posts">
-          <CustomButton name="View All Post" type="button" />
-        </Link></div>
+          <Link href="/posts/all-posts">
+            <CustomButton name="View All Post" type="button" />
+          </Link>
+        </div>
       )}
     </div>
   );

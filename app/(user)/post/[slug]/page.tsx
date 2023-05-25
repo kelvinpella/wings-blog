@@ -27,7 +27,6 @@ export default async function Post({
   } = post;
   return (
     <div className="pt-24 w-full ">
-      {" "}
       <article className="lg:max-w-4xl mx-auto">
         <h1>{title}</h1>
         <Author name={name} src={profileImage} date={_createdAt} />

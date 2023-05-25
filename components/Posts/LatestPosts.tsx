@@ -5,16 +5,15 @@ import PostCard from "./PostCard";
 import { blogContext } from "@/common/context";
 import Link from "next/link";
 import CustomButton from "../Buttons/CustomButton";
-export default function LatestPosts() {
-  // renders all posts in /posts
+export default function LatestPosts({ pageCalling }: { pageCalling: string }) {
+  // renders all posts in /all-post
   // renders only 9 posts in home route
   const { posts } = useContext(blogContext);
-  const pathname = usePathname();
-  const isHomeRoute = pathname === "/";
+  const isHomeRoute = pageCalling === "home";
   const latestPosts = isHomeRoute ? posts.slice(0, 10) : posts;
   const renderedPosts = useMemo(() => {
     return latestPosts.map((post) => <PostCard key={post._id} post={post} />);
-  }, [isHomeRoute, posts]);
+  }, [latestPosts]);
   return (
     <div>
       <h1>{isHomeRoute ? "Latest Posts" : "All Posts"}</h1>

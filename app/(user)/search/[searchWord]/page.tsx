@@ -45,7 +45,7 @@ export default function SearchWord({
           </h1>
         )}
       </div>
-      <LatestPosts />
+      <LatestPosts pageCalling="all-post" />
     </div>
   );
 }

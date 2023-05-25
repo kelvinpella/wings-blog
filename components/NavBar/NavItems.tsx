@@ -15,7 +15,7 @@ export default function NavItems({ navItemsProps: { setIsMenuOpen } }: Props) {
       {navItems.map(({ name, value }) => (
         <Link
           key={value}
-          href={value}
+          href={`/${value}`}
           onClick={() => setIsMenuOpen(false)}
           className="my-2 md:my-0 hover:text-amber-700"
         >

@@ -6,7 +6,7 @@ import { getPosts } from "@/sanity/sanity-utils";
 import { blogContext } from "../../common/context";
 import { BlogContextType } from "@/typings";
 export default async function RootLayout({
-  children = null, // defaults null -> not sure why it sometimes said cannot destructure children
+  children,
 }: {
   children: React.ReactNode;
 }) {

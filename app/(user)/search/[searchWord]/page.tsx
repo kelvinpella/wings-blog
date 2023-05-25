@@ -30,7 +30,7 @@ export default function SearchWord({
           </div>
         </Link>
       )),
-    [searchWord]
+    [decodedText, posts]
   );
 
   return (

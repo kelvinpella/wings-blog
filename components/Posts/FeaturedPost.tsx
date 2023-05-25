@@ -1,15 +1,13 @@
-'use client'
+"use client";
 import CustomButton from "../Buttons/CustomButton";
 import Author from "../Author/Author";
 import Link from "next/link";
 import { blogContext } from "@/common/context";
 import { useContext } from "react";
-import { random } from "lodash";
 
 export default function FeaturedPost() {
   const { posts } = useContext(blogContext);
-  const randomPostIndex = random(posts.length > 0 ? posts.length - 1 : 0);
-  const featured = posts[randomPostIndex];
+  const featured = posts[0];
   const {
     title,
     headline,

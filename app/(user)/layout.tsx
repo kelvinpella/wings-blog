@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import NavBar from "@/components/NavBar/NavBar";
 import "@/public/globals.css";
 import Footer from "@/components/Footer/Footer";
@@ -6,7 +6,7 @@ import { getPosts } from "@/sanity/sanity-utils";
 import { blogContext } from "../../common/context";
 import { BlogContextType } from "@/typings";
 export default async function RootLayout({
-  children,
+  children = null, // defaults null -> not sure why it sometimes said cannot destructure children
 }: {
   children: React.ReactNode;
 }) {

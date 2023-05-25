@@ -1,5 +1,5 @@
 import Image from "next/image";
-import profileImage from "@/public/images/profile.jpg";
+import profileImage from "@/public/images/clearprofile.png";
 import {
   AiOutlineTwitter,
   AiOutlineFacebook,
@@ -36,7 +36,8 @@ export default function Contact() {
           Kelvin Pella is a passionate aviation enthusiast and accomplished
           author in the field of aviation. With a background in Aeronautical
           Engineering, he combines his technical expertise with a love for
-          writing to educate and inspire others about aviation. <br /><br />
+          writing to educate and inspire others about aviation. <br />
+          <br />
           His articles and books cover a wide range of aviation topics, from
           history to technological advancements. <br /> <br />
           As a licensed pilot, he brings firsthand experience to his work. His
